@@ -3,22 +3,19 @@
 
 int main()
 {
-    int a, b ,c;
-    printf("Enter three number: ");
-    scanf("%d%d%d",&a, &b, &c);
-    if (a>b && a>c)
-    {
-        printf("%d is greatest among three number",a);
-    }
-    else if (b>a && b>c)
-    {
-        printf("%d is greatest among three number",b);
     
-    }
-    else 
+    int a,b,c;
+    printf("Enter three numbers : ");
+    scanf("%d%d%d",&a,&b,&c);
+    if(a>b)
     {
-        printf("%d is greatest among three number",c);
+        (a>c) ? printf("%d is greater",a)
+        : printf("%d",c);
     }
-    
-    
+    else
+    {
+        (b>c) ? printf("%d is greater",b)
+        :printf("%d is greater",c);
+    }
+    getch();
 }
